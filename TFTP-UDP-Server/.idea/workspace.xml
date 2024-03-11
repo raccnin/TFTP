@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4dadc5f7-3689-4186-a590-5a93319b4c34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/TFTP-UDP-Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TFTP-UDP-Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Client/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Client/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Client/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Client/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Server/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Server/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/src/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -56,6 +40,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710167322190</updated>
-      <workItem from="1710167323145" duration="309000" />
+      <workItem from="1710167323145" duration="1038000" />
     </task>
     <servers />
   </component>
