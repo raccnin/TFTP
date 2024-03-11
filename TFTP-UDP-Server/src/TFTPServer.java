@@ -4,16 +4,17 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
 
-public class Server {
+public class TFTPServer {
 
     private DatagramSocket socket;
     private byte[] buf = new byte[256];
 
-    public Server(DatagramSocket socket) {
+    public TFTPServer(DatagramSocket socket) {
         this.socket = socket;
     }
 
     public void receive() {
+        System.out.println("TFTP server running");
         while (true) {
             try {
                 DatagramPacket packet = new DatagramPacket(buf, buf.length);
@@ -31,7 +32,7 @@ public class Server {
 
     public static void main(String[] args) throws SocketException {
         DatagramSocket socket = new DatagramSocket(9999);
-        Server server = new Server(socket);
+        TFTPServer server = new TFTPServer(socket);
         server.receive();
     }
 }

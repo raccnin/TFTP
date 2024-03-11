@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13c64184-daa8-4358-8a81-74e5b7a95a2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/src/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/src/TFTPServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +25,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2dXvfPGfaCKjuLywuJYVTmBkG5l" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/fiery/Code/Java/OS_263079/os-coursework1",
+    "last_opened_file_path": "C:/Users/fiery/Code/Java/CN_263079/TFTP-UDP-Server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710167341901</updated>
       <workItem from="1710167342929" duration="1102000" />
+      <workItem from="1710168493253" duration="5094000" />
     </task>
     <servers />
   </component>
