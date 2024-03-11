@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4dadc5f7-3689-4186-a590-5a93319b4c34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/TFTP-UDP-Client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/src/Client.java" afterDir="false" />
+    <list default="true" id="13c64184-daa8-4358-8a81-74e5b7a95a2f" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TFTP-UDP-Server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TFTP-UDP-Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/TFTP-UDP-Server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Client/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Client/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Client/.idea/misc.xml" beforeDir="false" />
@@ -21,31 +24,39 @@
       <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Server/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Server/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-TCP-Server/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/src/main/java/org/example/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
+  "customColor": "",
+  "associatedIndex": 0
 }]]></component>
-  <component name="ProjectId" id="2dXvcyJidDZPcWNV8GB6GaA9Db5" />
+  <component name="ProjectId" id="2dXvfPGfaCKjuLywuJYVTmBkG5l" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,18 +67,33 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/fiery/Code/Java/OS_263079/os-coursework1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="TFTP-UDP-Client" />
+      <option name="PROGRAM_PARAMETERS" value="localhost" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4dadc5f7-3689-4186-a590-5a93319b4c34" name="Changes" comment="" />
-      <created>1710167322190</created>
+      <changelist id="13c64184-daa8-4358-8a81-74e5b7a95a2f" name="Changes" comment="" />
+      <created>1710167341901</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1710167322190</updated>
-      <workItem from="1710167323145" duration="309000" />
+      <updated>1710167341901</updated>
+      <workItem from="1710167342929" duration="434000" />
     </task>
     <servers />
   </component>
