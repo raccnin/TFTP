@@ -18,12 +18,51 @@ public class Client {
         this.address = address;
     }
 
+    private byte[] handleData(DatagramPacket packet) {
+        return null;
+    }
+    private byte[] handleAck(DatagramPacket packet) {
+        System.out.println("Received ACK");
+        return null;
+    }
+    private byte[] handleError(DatagramPacket packet) {
+        return null;
+    }
+    private byte[] getResponseHeader(DatagramPacket packet) {
+        byte opcode = packet.getData()[1];
+        //System.out.println("Opcode: "+Byte.valueOf(opcode));
+        switch (opcode) {
+            case 3:
+                return handleData(packet);
+            case 4:
+                return handleAck(packet);
+            case 5:
+                return handleError(packet);
+            default:
+                return null;
+        }
+    }
     public void handleSession(byte[] buf) {
-        try {
-            DatagramPacket packet = new DatagramPacket(buf, buf.length, address, 9999);
-            socket.send(packet);
-        } catch (IOException e) {
-            e.printStackTrace();
+        DatagramPacket packet = new DatagramPacket(buf, buf.length, address, 9999);
+        while (true) {
+            try {
+                socket.send(packet);
+
+                socket.receive(packet);
+                InetAddress serverAddr = packet.getAddress();
+                int serverPort = packet.getPort();
+                System.out.println("received reply from "+serverAddr+":"+Integer.valueOf(serverPort));
+                String message = new String(packet.getData(), 0, packet.getLength());
+                System.out.println("message received: "+message);
+                //System.out.println(Arrays.toString(packet.getData()));
+                buf = getResponseHeader(packet);
+                if (buf == null) {
+                    break;
+                }
+                break;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
