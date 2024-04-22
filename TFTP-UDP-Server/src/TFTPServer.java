@@ -68,6 +68,7 @@ public class TFTPServer {
      */
     private byte[] getDataPacket(String filename, int blockNumber) {
         byte[] fileData;
+        byte[] blockBuf = blockNumbertoBytes(blockNumber);
 
         try {
             fileData = Files.readAllBytes(Paths.get(fileDirectory + filename));
@@ -85,8 +86,8 @@ public class TFTPServer {
             byte[] dataPacket = new byte[4+segment.length];
             dataPacket[0] = 0;
             dataPacket[1] = 3;
-            dataPacket[2] = 0;
-            dataPacket[3] = (byte) blockNumber; //TODO: allow for numbers > 255, need to implement int to byte array
+            dataPacket[2] = blockBuf[0];
+            dataPacket[3] = blockBuf[1];
 
             System.arraycopy(segment, 0, dataPacket, 4, segment.length);
             return dataPacket;
@@ -121,16 +122,12 @@ public class TFTPServer {
      *  opcode  | blockNum |
      */
     private byte[] getAck(InetAddress address, int port, int blockNumber) {
-        //TODO: allow for numbers > 255, need to implement int to byte array
 
         byte[] ackBuf = new byte[4];
+        byte[] blockBuf = blockNumbertoBytes(blockNumber);
         ackBuf[1] = 4;
-        if (blockNumber <= 255){
-            ackBuf[2] = 0;
-            ackBuf[3] = (byte) blockNumber;
-        } else {
-
-        }
+        ackBuf[2] = blockBuf[0];
+        ackBuf[3] = blockBuf[1];
 
         return ackBuf;
     }
@@ -191,8 +188,6 @@ public class TFTPServer {
             e.printStackTrace();
         }
     }
-
-
 
     private int getBlockNumber(byte[] packetData) {
         return (((packetData[2] & 0xff) << 8) | (packetData[3] & 0xff));
