@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dadc5f7-3689-4186-a590-5a93319b4c34" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Files/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Session.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TFTPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TFTPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/funnycat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/funnycat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,22 +35,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/fiery/Code/Java/CN_263079/TFTP-UDP-Server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fiery/Code/Java/CN_263079/TFTP-UDP-Server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\fiery\Code\Java\CN_263079\TFTP-UDP-Server\Files" />
       <recent name="C:\Users\fiery\Code\Java\CN_263079\TFTP-UDP-Server\src" />
     </key>
   </component>
@@ -66,6 +70,9 @@
       <workItem from="1710281433627" duration="831000" />
       <workItem from="1710431111643" duration="12000" />
       <workItem from="1711126893171" duration="8555000" />
+      <workItem from="1711135793730" duration="137000" />
+      <workItem from="1713180037467" duration="13000" />
+      <workItem from="1713792949777" duration="14982000" />
     </task>
     <servers />
   </component>

@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13c64184-daa8-4358-8a81-74e5b7a95a2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/Files/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/src/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/src/Session.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/src/TFTPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/src/TFTPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/src/funnycat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/src/funnycat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/src/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/Files/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,8 @@
       <workItem from="1710168493253" duration="5094000" />
       <workItem from="1710249285491" duration="6000" />
       <workItem from="1710256427851" duration="9158000" />
+      <workItem from="1713736854717" duration="17000" />
+      <workItem from="1713802971318" duration="22000" />
     </task>
     <servers />
   </component>
