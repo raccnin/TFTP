@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.*;
 import java.nio.ByteBuffer;
@@ -19,6 +21,7 @@ public class Client {
     private static final int bufSize = 516;
     private byte[] fileBuf;
     private String filename;
+    private static final String fileDirectory = "Files/";
 
     public Client(InetAddress serverAddress, int serverPort) throws SocketException {
         Random rand = new Random();
@@ -90,13 +93,39 @@ public class Client {
     private byte[] handleData(DatagramPacket packet) {
         int blockNumber = getBlockNumberInt(packet);
         System.out.println("Received DAT packet #: "+blockNumber);
+        appendToBuf(packet);
+        if (packet.getLength() < 516){
+            System.out.println("last DAT packet received, writing...");
+            readBufToFile();
+            return null;
+        }
 
-        byte[] data = Arrays.copyOfRange(packet.getData(), 4, packet.getData().length);
+
+        return getAckPacket(blockNumber);
+    }
+    private void appendToBuf(DatagramPacket packet){
+        byte[] data = Arrays.copyOfRange(packet.getData(), 4, packet.getLength());
         byte[] newBuf = Arrays.copyOf(fileBuf, fileBuf.length + data.length);
         System.arraycopy(data, 0, newBuf, fileBuf.length, data.length);
         fileBuf = newBuf;
+    }
 
-        return getAckPacket(blockNumber);
+    private void readBufToFile() {
+        try {
+            File file = new File(fileDirectory+filename);
+            if (file.createNewFile()) {
+                System.out.println("File created: "+file.getName());
+            } else {
+                System.out.println("File already exists, overwiting...");
+            }
+            FileOutputStream outputStream = new FileOutputStream(file);
+            outputStream.write(fileBuf);
+            outputStream.close();
+            System.out.println("Wrote file data to: "+file.getName());
+        } catch (IOException e) {
+            System.out.println("Error occurred in reading data to file");
+            e.printStackTrace();
+        }
     }
 
     private byte[] getAckPacket(int blockNumber) {
@@ -107,8 +136,6 @@ public class Client {
         ackBuf[1] = (byte) 4;
         ackBuf[2] = blockBuf[0];
         ackBuf[3] = blockBuf[1];
-
-        //TODO: Figure out why TFTPD hates this packet
 
         return ackBuf;
     }
@@ -127,7 +154,7 @@ public class Client {
         byte[] blockBuf = getBlockNumberBytes(blockNumber);
 
         try {
-            fileData = Files.readAllBytes(Paths.get(filename));
+            fileData = Files.readAllBytes(Paths.get(fileDirectory+filename));
             if (blockNumber == ((fileData.length / 512) + 2)){
                 System.out.println("Last packet in file");
                 return null;

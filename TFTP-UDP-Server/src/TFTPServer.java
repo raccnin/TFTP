@@ -22,12 +22,15 @@ public class TFTPServer {
     private static final byte OP_ACK = 4;
     private static final byte OP_ERR = 5;
 
-    private String filename;
+    private HashMap<InetAddress, String> addressFileMap;
+    private HashMap<String, byte[]> fileBufMap;
     private byte[] fileBuf;
 
     public TFTPServer(DatagramSocket socket) {
-        fileBuf = new byte[0];
+        addressFileMap = new HashMap<>();
+        fileBufMap = new HashMap<>();
         this.socket = socket;
+
     }
 
     /**
@@ -61,19 +64,20 @@ public class TFTPServer {
                 switch (opcode) {
                     case OP_RRQ: // Read Request
                     case OP_WRQ: // Write Request
-                        filename = getFileName(packet);
-                        buf = handleRequest(packet, opcode, filename);
+                        //initial interaction, new address added to addressFileMap
+                        addressFileMap.put(clientAddr, getFileName(packet));
+                        buf = handleRequest(packet, opcode, addressFileMap.get(clientAddr));
                         break;
                     case OP_DAT: // Data
                         System.out.println("DATA blocknumber: "+getBlockNumber(data));
-                        buf = handleDataPacket(packet, filename);
+                        buf = handleDataPacket(packet, addressFileMap.get(clientAddr));
                         break;
                     case OP_ACK: // Acknowledgement
 
                         System.out.println("ACK blocknumber: "+getBlockNumber(data));
                         //buf = handleAck(blockNumber);
                         if (getBlockNumber(data) > 0) {
-                            buf = getDataPacket(filename, getBlockNumber(data) + 1);
+                            buf = getDataPacket(addressFileMap.get(clientAddr), getBlockNumber(data) + 1);
                         }
                         break;
                     case OP_ERR: // Error
@@ -105,6 +109,8 @@ public class TFTPServer {
         if (opcode == 1){
             return(getDataPacket(filename, 1));
         } else {
+            //new request, needs to be added to fileBufMap
+            fileBufMap.put(filename, new byte[0]);
             return getAck(0);
         }
     }
@@ -137,42 +143,18 @@ public class TFTPServer {
      */
     private byte[] handleDataPacket(DatagramPacket packet, String filename) {
 
-        byte[] data = getData(packet);
-        byte[] oldBuf = fileBuf;
+        byte[] data = Arrays.copyOfRange(packet.getData(), 4, packet.getLength());
+        byte[] oldBuf = fileBufMap.get(filename);
         byte[] newBuf = Arrays.copyOf(oldBuf, oldBuf.length + data.length); //makes new list with old file buffer + padding of new data to be entered
         System.arraycopy(data, 0, newBuf, oldBuf.length, data.length); //concatenating old buffer with new data
-        fileBuf = newBuf;
-        if (packet.getData()[515] == 0){ //last bit is null
+        fileBufMap.replace(filename, newBuf);
+        if (packet.getLength() < 516) { //last bit is null
             System.out.println("Final DATA packet");
-            readToFile(fileBuf, filename);
+            readToFile(fileBufMap.get(filename), filename);
         }
 
 
         return getAck(getBlockNumber(packet.getData())); //return ACK for retransmission
-    }
-
-    /**
-     * reads data portion of a data packet
-     * @param packet
-     * @return data buf
-     */
-    private static byte[] getData(DatagramPacket packet) {
-        int to = packet.getData().length;
-        //getting new data buffer data[4:end]
-        // TODO: make pruning functional, caused by making fresh buf each loop
-        /*
-        if (packet.getData()[515] == 0){ //smaller than 516 bytes
-             //need to prune before adding line of nulls
-            for(int i = 4; i < packet.getData().length-4; i++){ //get index of first nullbyte
-                if(packet.getData()[i] == 0){
-                    to = i;
-                    break;
-                }
-            }
-        }
-        */
-        byte[] data = Arrays.copyOfRange(packet.getData(), 4, to);
-        return data;
     }
 
     /**
