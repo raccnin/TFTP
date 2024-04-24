@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4dadc5f7-3689-4186-a590-5a93319b4c34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/bruh.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Client/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Client/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TFTPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TFTPServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test_directory/bruh.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

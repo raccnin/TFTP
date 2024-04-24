@@ -51,9 +51,6 @@ public class Client {
                 serverAddress = packet.getAddress();
                 serverPort = packet.getPort();
                 System.out.println("Received reply from "+serverAddress+":"+Integer.valueOf(serverPort));
-                //String message = new String(packet.getData(), 0, packet.getLength());
-                //System.out.println("message received: "+message);
-                //System.out.println(Arrays.toString(packet.getData()));
                 buf = getResponseHeader(packet);
                 if (buf == null) {
                     break;
@@ -243,5 +240,4 @@ public class Client {
         client.sendAndReceive(request);
 
     }
-
 }

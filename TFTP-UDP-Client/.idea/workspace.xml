@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13c64184-daa8-4358-8a81-74e5b7a95a2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Files/293.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bruh.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TFTP-UDP-Server/src/TFTPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TFTP-UDP-Server/src/TFTPServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test_directory/bruh.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +79,7 @@
       <workItem from="1713736854717" duration="17000" />
       <workItem from="1713802971318" duration="22000" />
       <workItem from="1713894385107" duration="9754000" />
-      <workItem from="1713973179607" duration="4285000" />
+      <workItem from="1713973179607" duration="4409000" />
     </task>
     <servers />
   </component>
