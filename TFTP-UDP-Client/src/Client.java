@@ -23,11 +23,16 @@ public class Client {
     private String filename;
     private static final String fileDirectory = "Files/";
 
-    public Client(InetAddress serverAddress, int serverPort) throws SocketException {
+    public Client(InetAddress serverAddress, int serverPort)  {
         Random rand = new Random();
-        int port = rand.nextInt((50000-10000))+10000; //number from 10000-50000
+        int port = rand.nextInt((50000-10000)+10000); //number from 10000-50000
         System.out.println("Created Client on port: "+Integer.valueOf(port));
-        socket = new DatagramSocket(port);
+        try {
+            socket = new DatagramSocket(port);
+            socket.setSoTimeout(30000);
+        } catch (SocketException e) {
+            e.printStackTrace();
+        }
         this.serverAddress = serverAddress;
         this.serverPort = serverPort;
         fileBuf = new byte[0];
@@ -55,8 +60,9 @@ public class Client {
                 if (buf == null) {
                     break;
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
+                break;
             }
         }
     }
