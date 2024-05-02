@@ -1,1 +1,1 @@
-# WARNING INCLUDES RFI, DO NOT USE PUBLICLY
+# Includes RFI use at own discretion
